@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default_post
 title: My first blog!
 category: git
 ---
