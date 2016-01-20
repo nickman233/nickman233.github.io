@@ -14,7 +14,7 @@ category: git
 #git的一些命令   
 
 ##linux创建SSH密钥  
-{% highlight shell %}
+{% highlight bash %}
 $ ssh-keygen -t rsa -C "your_email@youremail.com"
 {% endhighlight %}
 
@@ -23,25 +23,25 @@ $ ssh-keygen -t rsa -C "your_email@youremail.com"
 回到github，进入Account Settings，左边选择SSH Keys，Add SSH Key,title随便填，粘贴key。
 为了验证是否成功，输入：  
 
-{% highlight shell %}
+{% highlight bash %}
 $ ssh -T git@github.com
 {% endhighlight %}
 
 如果是第一次的会提示是否continue，输入yes就会看到：You've successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。  
 
 ##github 设置   
-{% highlight shell %}
+{% highlight bash %}
 $ git config --global user.name "your name"
 $ git config --global user.email "your_email@youremail.com"
 {% endhighlight %}
 
 ##clone  
-{% highlight shell %}
+{% highlight bash %}
 $ git clone https://github.com/nickman233/nickman233.github.io
 {% endhighlight %}
 
 ##push  
-{% highlight shell %}
+{% highlight bash %}
 $ git add images/pic.jpg
 $ git commit -m "pic"
 $ git remote add origin https://github.com/nickman233/nickman233.github.io
@@ -49,7 +49,7 @@ $ git push -u origin master
 {% endhighlight %}
 
 ##创建项目并上传  
-{% highlight shell %}
+{% highlight bash %}
 $ mkdir testdir & cd testdir  
 $ touch README.md  
 $ git init #初始化一个本地库  
