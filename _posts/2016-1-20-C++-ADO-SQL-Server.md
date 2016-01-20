@@ -14,29 +14,36 @@ title : C++ 通过 ADO 连接 SQL Server 较完整过程
 ## 配置 SQL Server 数据源
 因为使用的接口是 OBDC，所以在使用C++连接 SQL Server 数据库前，得配置 OBDC 数据源，不然后面 Open 时就会出现 **[Microsoft][ODBC 驱动程序管理器] 未发现数据源名称并且未指定默认驱动程序** 的错误。  
 1.在控制面板-管理工具中打开 ODBC 数据源，切换到系统DSN页，点击添加。  
+
 ![ODBC 数据源](http://7sbplh.com1.z0.glb.clouddn.com/SQLServerOBDC%E6%95%B0%E6%8D%AE%E6%BA%90.png)
 
 2.选择合适的驱动，这里我选SQL Server，点击完成。  
+
 ![添加新数据源](http://7sbplh.com1.z0.glb.clouddn.com/SQLServer%E5%88%9B%E5%BB%BA%E6%96%B0%E6%95%B0%E6%8D%AE%E6%BA%90.png)
 
 3.选择登录方式为**使用用户输入登录ID 和密码的SQL Server 验证**，在下方输入ID 和密码。在这之前需要创建对应的账号。我的登录过程中出现了开始给出的链接中*18456*的错误，如果遇到可以尝试链接中的解决方法。然后点击*下一步*。 
+
 ![1](http://7sbplh.com1.z0.glb.clouddn.com/SQLServer%E5%88%9B%E5%BB%BA%E5%88%B0SQL%20Server%E7%9A%84%E6%96%B0%E6%95%B0%E6%8D%AE%E6%BA%90.png)
 
 4.点击*下一步*，当然也可以按提示设置。  
+
 ![2](http://7sbplh.com1.z0.glb.clouddn.com/SQLServer%E5%88%9B%E5%BB%BA%E5%88%B0SQL%20Server%E7%9A%84%E6%96%B0%E6%95%B0%E6%8D%AE%E6%BA%902.png)
 
 5.点击*完成*，当然也可以按提示设置。 
+
 ![3](http://7sbplh.com1.z0.glb.clouddn.com/SQLServer%E5%88%9B%E5%BB%BA%E5%88%B0SQL%20Server%E7%9A%84%E6%96%B0%E6%95%B0%E6%8D%AE%E6%BA%903.png)
 
-6.完成了创建，可以点击*测试数据源*。
+6.完成了创建，可以点击*测试数据源*。 
+
 ![测试](http://7sbplh.com1.z0.glb.clouddn.com/SQLServerOBDC%20Microsoft%20SQL%20Server%E5%AE%89%E8%A3%85.png)
 
-7.不出意外，应该会显示测试成功。
+7.不出意外，应该会显示测试成功。 
+
 ![成功](http://7sbplh.com1.z0.glb.clouddn.com/SQLServer%E6%B5%8B%E8%AF%95.png)
 
 ## C++ ADO 连接 SQL Server 简单代码及注释
 
-```c++  
+{% highlight c++ %}
 
 // SQLTEST.cpp : 定义控制台应用程序的入口点。
 //
@@ -124,5 +131,4 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
   
-```
-
+{% highlight %}
