@@ -3,13 +3,12 @@ layout: default_post
 title : C++ 通过 ADO 连接 SQL Server 较完整过程
 ---
 
-# C++ 通过 ADO 连接 SQL Server 较完整过程
 
-首先，给出几个我参考的网站： 
-1. [C++使用ADO连接SQLSERVER](http://blog.csdn.net/shellching/article/details/8808771)
-2. [C++连接SQL Server 数据库](http://blog.csdn.net/ljh56789/article/details/8061323)
-3. [配置SQL Server OBDC数据源](http://www.360doc.com/content/12/0213/18/1912775_186366494.shtml)
-4. [SQLSERVER2008 18456错误](http://www.cnblogs.com/496963524-zhangying/articles/2232599.html)
+首先，给出几个我参考的网站：  
+1. [C++使用ADO连接SQLSERVER](http://blog.csdn.net/shellching/article/details/8808771)  
+2. [C++连接SQL Server 数据库](http://blog.csdn.net/ljh56789/article/details/8061323)  
+3. [配置SQL Server OBDC数据源](http://www.360doc.com/content/12/0213/18/1912775_186366494.shtml)  
+4. [SQLSERVER2008 18456错误](http://www.cnblogs.com/496963524-zhangying/articles/2232599.html)  
 
 假设已经懂得了 SSMS 的基本操作，能够建立数据库，能够新建表。。。  
 ## 配置 SQL Server 数据源
