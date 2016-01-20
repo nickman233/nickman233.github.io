@@ -1,3 +1,8 @@
+---
+layout: default_post
+title : C++ 通过 ADO 连接 SQL Server 较完整过程
+---
+
 # C++ 通过 ADO 连接 SQL Server 较完整过程
 
 首先，给出几个我参考的网站： 
