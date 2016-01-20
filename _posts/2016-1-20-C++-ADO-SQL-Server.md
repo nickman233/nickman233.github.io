@@ -43,7 +43,7 @@ title : C++ 通过 ADO 连接 SQL Server 较完整过程
 
 ## C++ ADO 连接 SQL Server 简单代码及注释
 
-{% highlight gcc %}
+{% highlight cpp %}
 
 // SQLTEST.cpp : 定义控制台应用程序的入口点。
 //
