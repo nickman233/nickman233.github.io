@@ -132,3 +132,6 @@ int _tmain(int argc, _TCHAR* argv[])
 }
   
 {% endhighlight %}
+
+tip:  
+使用udl文件获取数据库的连接字符串,新建一个udl后缀文件，双击打开设置，然后用记事本打开，就可以得到连接字符串了。
